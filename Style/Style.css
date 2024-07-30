@@ -1,0 +1,109 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+body{
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(../Images/leaf.jpg);
+}
+.team-section{
+    margin-top: 50px;
+}
+.team-title h1{
+    font-size: 50px;
+    color: antiquewhite;
+    text-align: center;
+    position: relative;
+}
+.container{
+    width:100%;
+}
+.container .team-cards{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+.container .team-cards .team-card{
+    background:azure;
+    border-radius: 50px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    text-align: center;
+    transition: transform 0.6s ease;
+    width: calc(33.33% - 20px);
+}
+.container .team-cards .team-card:hover{
+    transform: translateY(-12px);
+}
+.container .team-cards .team-image{
+    border-radius: 50%;
+    height: 130px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.team-cards{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+    flex-wrap: wrap;
+}
+.team-card{
+    background:azure;
+    border-radius: 50px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 20px 20px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.6s ease;
+    width: calc(33.33% - 20px);
+    flex-basis: 30%;
+}
+.team-card:hover{
+    transform: translateY(-12px);
+}
+.team-image img{
+    border-radius: 50%;
+    height: 130px;
+    width: 130px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.team-detail h3{
+       color: black;
+       font-size: 20px;
+       margin: 15px 0px;
+       font-family: italic;
+}
+.team-detail p{
+    color: black;
+    font-size:18px; 
+}
+@media screen and (max-width: 768px) {
+    .team-cards{
+        flex-direction: column;   
+    }
+    .team-card{
+        width: 90%;
+        margin:10px 20px;
+        
+    }
+}
+.icons a{
+    text-decoration: none;
+    color: black;
+}
+.icons ion-icon{
+    margin: 5px auto;
+    color:black;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    transition: 0.3s ease;
+}
+.icons ion-icon:hover{
+    color: aqua;
+}
